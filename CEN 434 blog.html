@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(196, 227, 196);
+            color: #101010;
+        }
+        header {
+            background: #074830;
+            color: #023b2b;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background:  rgb(196, 227, 196);
+            border-radius: 30px;
+        }
+        .content{
+            border-radius: 20px;
+        }
+        .profile {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            border-right: 1px solid #ddd;
+        }
+        .profile img {
+            width: 500px; /* Adjust width for full-body picture */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px;
+            border: 6px solid #053d19;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+        }
+        h1
+        {color: white;}
+         h2 {
+           color: black;
+           text-align: center;
+        }
+        article {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        p
+        {
+            font-size :20px;
+        
+
+
+    }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #074830;
+            color: #fefcfc;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .profile {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Personal Blog</h1>
+</header>
+
+<div class="container">
+    <div class="profile">
+        <img src="IBALA CODE.jpg" alt="Full Body Picture">
+        <h2>AMOS IBALA</h2>
+    </div>
+    <div class="content">
+        <article>
+            <h2>ABOUT ME</h2>
+            <p>Helloo!!!<br> I'm Ibala and its so nice to have you on my blog. I'm just a young girl in tech who is passionate about Jesus, music, food and travel. Follow along on this exciting journey as I document beautiful moments in my life. Love youu!!!</p> 
+        </article>
+        <br>
+        <article>
+            <h2>Exploring My Culinary Journey: From Home Cook to Food Enthusiast</h2>
+            <p>Food has always been a passion of mine. Growing up, I spent countless hours in the kitchen with my grandmother, learning to create dishes from her famous spaghetti to homemade pastries. Food isn’t just about nourishment for me; it’s about connection, creativity, and adventure. I can’t wait to see where this culinary journey takes me next!</p>
+        </article>
+        <br>
+        <article>
+            <h2>My Travel Journey: Exploring the World</h2>
+            <p>Travel has always been a passion of mine. From a young age, I dreamed of exploring new places and cultures. My first big adventure was a family trip to the mountains, where I fell in love with the beauty of nature. Every journey teaches me something new, and I look forward to the adventures that await!</p>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 AMOS IBALA. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
