@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modeling Recruiting Agency</title>
+    </head>
+<body>
+    <header>
+        <style>
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f8f7f8;
+                color: #333;
+                          
+            }
+        
+            header {
+                background-color: rgb(112, 166, 213);
+                text-align: center;
+            }
+    
+                
+
+
+        </style>
+        <h1>Welcome to Our Modeling Agency</h1>
+        <p>Your first step to a successful modeling career!</p>
+    </header>
+    
+    <section>
+        <div class="login-container">
+        <h2>Join Our Team!</h2>
+        <p>We are looking for aspiring models to join our diverse and talented team. If you have a passion for fashion and a desire to succeed, we want to hear from you!</p>
+        
+        
+            <h3>Apply Now!</h3>
+            <p>Fill out the form below to get started.</p>
+   
+        
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label> <br><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <label for="email">Email:</label><br><br>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="age">Age:</label><br><br>
+            <input type="number" id="age" name="age" required><br><br>
+    
+            <label for="message">Why do you want to join us?</label> <br><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+    
+            <button type="submit">Submit Application</button>
+        </form>
+    </section>
+    
+</body>
+</html>
