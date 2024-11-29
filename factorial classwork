@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculation</title>
+    <script>
+        function factorial(n) {
+            let result = BigInt(1); // Use BigInt for large numbers
+            for (let i = 2; i <= n; i++) {
+                result *= BigInt(i);
+            }
+            return result;
+        }
+
+        function calculateFactorial() {
+            const number = 88;
+            const result = factorial(number);
+            document.getElementById('result').innerText = "88! = " + result.toString();
+        }
+    </script>
+</head>
+<body onload="calculateFactorial()">
+
+    <h1>Factorial Calculator</h1>
+    <p id="result"></p>
+
+</body>
+</html>
