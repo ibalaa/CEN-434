@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Calculation</title>
+    <script>
+        function calculateAverage() {
+            const A = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            const sum = A.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+            const average = sum / A.length;
+
+            document.getElementById('result').innerText = "The average is: " + average;
+        }
+    </script>
+</head>
+<body onload="calculateAverage()">
+
+    <h1>Average Calculator</h1>
+    <p id="result"></p>
+
+</body>
+</html>
