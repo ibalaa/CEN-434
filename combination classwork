@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combination Calculator</title>
+    <script>
+        function factorial(n) {
+            if (n === 0 || n === 1) return BigInt(1);
+            let result = BigInt(1);
+            for (let i = 2; i <= n; i++) {
+                result *= BigInt(i);
+            }
+            return result;
+        }
+
+        function combination(n, r) {
+            if (r > n) return BigInt(0);
+            return factorial(n) / (factorial(r) * factorial(n - r));
+        }
+
+        function calculateCombination(x, y) {
+            let result;
+            if (x > y) {
+                result = combination(x, y);
+            } else if (y > x) {
+                result = combination(y, x);
+            } else { // x === y
+                result = combination(x - 1, y);
+            }
+            document.getElementById('result').innerText = `Combination result: ${result.toString()}`;
+        }
+        
+        // Example input
+        function runExample() {
+            const x = 5; // You can change these values to test different scenarios
+            const y = 3;
+            calculateCombination(x, y);
+        }
+    </script>
+</head>
+<body onload="runExample()">
+
+    <h1>Combination Calculator</h1>
+    <p id="result"></p>
+
+</body>
+</html>
